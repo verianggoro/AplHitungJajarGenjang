@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devlat.veri.hitungjajargenjang.MainActivity">
+
+    <ImageView
+        android:id="@+id/IMGJajarGen"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/jajar_genjang" />
+
+    <TextView
+        android:id="@+id/TvAlas"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/IMGJajarGen"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text="Alas / Sisi a"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/InputAlas"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/IMGJajarGen"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/TvAlas"
+        android:hint="Masukan Alas/Sisi a"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/TvTinggi"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TvAlas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="Tinggi"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/InputTinggi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/InputAlas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/TvTinggi"
+        android:hint="Masukan Tinggi"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/TvSisiB"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TvTinggi"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text="Sisi b"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/InputSisiB"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/InputTinggi"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/TvSisiB"
+        android:hint="Masukan Sisi b"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/LinearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvSisiB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnLuas"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Luas"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/BtnKell"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Keliling"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BtnReset"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/LinearLay"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFF000"
+        android:text="C"
+        android:textColor="#ff0000"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/TvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/LinearLay"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/BtnReset"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+</RelativeLayout>
